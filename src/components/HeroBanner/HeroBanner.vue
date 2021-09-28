@@ -1,6 +1,6 @@
 <template>
   <section class="heroBanner">
-      <Header />
+      <Header color="#fff" topText="Web" bottomText="Development"/>
       <div class="center">
           <h1>Tom Lemelle</h1>
           <div class="drag"></div>

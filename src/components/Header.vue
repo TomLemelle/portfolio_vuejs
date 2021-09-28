@@ -1,17 +1,17 @@
 <template>
   <div class="top">
           <svg xmlns="http://www.w3.org/2000/svg" width="104" height="24" viewBox="0 0 104 24" class="top-left">
-            <path id="Tracé_1" data-name="Tracé 1" d="M0,0H24V24H0Z" fill="#fff"/>
-            <path id="Tracé_2" data-name="Tracé 2" d="M0,0H24V24H0Z" transform="translate(80)" fill="#fff"/>
-            <path id="Tracé_3" data-name="Tracé 3" d="M0,0H24V24H0Z" transform="translate(40)" fill="#fff"/>
+            <path id="Tracé_1" data-name="Tracé 1" d="M0,0H24V24H0Z" :fill="color"/>
+            <path id="Tracé_2" data-name="Tracé 2" d="M0,0H24V24H0Z" transform="translate(80)" :fill="color"/>
+            <path id="Tracé_3" data-name="Tracé 3" d="M0,0H24V24H0Z" transform="translate(40)" :fill="color"/>
         </svg>
 
         <div class="top-right">
             <div class="text">
-                <p>Web</p>
-                <p>Development</p>
+                <p :style="{ color: itemColor }">{{topText}}</p>
+                <p :style="{ color: itemColor }">{{bottomText}}</p>
             </div>
-            <div class="line"></div>
+            <div class="line" :style="{ backgroundColor: itemColor }"></div>
         </div>
       </div>
 </template>
@@ -19,6 +19,20 @@
 <script>
 export default {
     name: 'Header',
+    props: {
+        color: {
+            type: String,
+            default: '#111111',
+        },
+        topText: {
+            type: String,
+            required: true,
+        },
+        bottomText: {
+            type: String,
+            required: true,
+        },
+    }
 }
 </script>
 
@@ -44,7 +58,6 @@ export default {
         .line {
             width: 5px;
             height: 100px;
-            background: $white;
         }
     }
 }
