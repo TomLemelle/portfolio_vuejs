@@ -4,7 +4,7 @@
 
 <script>
 // @ is an alias to /src
-import HeroBanner from '@/components/HeroBanner';
+import HeroBanner from '@/components/HeroBanner/HeroBanner';
 
 export default {
   name: 'Home',
