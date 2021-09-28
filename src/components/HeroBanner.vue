@@ -24,6 +24,9 @@ export default {
 
 <style lang="scss">
 
+*{
+    transition: all 250ms ease-out;
+}
 .heroBanner {
     background: $black;
     width: 100%;
@@ -43,6 +46,11 @@ export default {
             text-align: center;
             white-space: nowrap;
             color: $white;
+
+            @media (max-width: 1400px) {font-size: 80px;}
+            @media (max-width: 900px) {font-size: 60px;}
+            @media (max-width: 660px) {font-size: 40px;}
+            @media (max-width: 460px) {font-size: 30px;}
         }
     }
 
