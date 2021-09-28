@@ -25,6 +25,7 @@ export default {
 <style lang="scss">
 
 .top {
+    height: 290px;
     display: flex;
     justify-content: space-between;
     align-items: center;
