@@ -2,7 +2,7 @@
     <ul class="whoiam">
         <li class="text">
             <h3>Who i am</h3>
-            <p>Sed erat ex, rhoncus pretium pharetra sed, rutrum in leo.</p>
+            <p>Im a french front & back developer </p>
             <p>Ut placerat nisi eu dolor mollis, et ultrices massa venenatis.</p>
             <p>Vivamus malesuada euismod leo ac condimentum.</p>
             <p>Integer sit amet lacus tincidunt, feugiat ligula vitae, viverra est.</p>
@@ -66,6 +66,7 @@ export default {
             font-weight: normal;
             font-size: 20px;
             color: $green;
+            mix-blend-mode: difference;
         }
     }
 
@@ -84,7 +85,7 @@ export default {
             background: $black;
         }
 
-        &::before { width: 460px; top: -15px; right: -15px; z-index: -1;}
+        &::before { top: -15px; right: -15px; z-index: -1;}
         &::after { top: 0; right: -15px; z-index: -2;}
 
         @media (max-width: 1130px) { 
@@ -115,17 +116,6 @@ export default {
         img {
             width: 100%;
         }
-
-        /* .shadow {
-            position: absolute;
-            z-index: 800;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background: $black;
-            @media (max-width: 1130px) { display: none;}
-        } */
     }
 }
 
