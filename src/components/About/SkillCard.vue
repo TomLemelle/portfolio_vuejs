@@ -53,6 +53,12 @@ export default {
         max-width: 70%;
         position: relative;
         z-index: 1;
+        @media (max-width: 1114px) {
+            font-size: .9vw;
+        }
+        @media (max-width: 900px) {
+            font-size: 10px;
+        }
     }
 }
 </style>
