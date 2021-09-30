@@ -9,8 +9,8 @@
         </div>
         <h4>Back<span> - END</span></h4>
         <div class="cards">
-            <SkillCard :style="nodejsbg" name="Node" desc="Javascript back-end language that i use with expressjs for creating api or back-end server, i love it :)" />
-            <SkillCard :style="symfonybg" name="Symfony" desc="PHP back-end & front-end framework that i use sometimes for creating api or back-end server, it's pretty cool :|" />
+            <SkillCard :style="nodejsbg" name="Node" desc="Javascript back-end language that i use with expressjs for creating apis or back-end servers, i love it :)" />
+            <SkillCard :style="symfonybg" name="Symfony" desc="PHP back-end & front-end framework that i use sometimes for creating apis or back-end servers, it's pretty cool :|" />
             <SkillCard :style="csharpbg" name="Csharp" desc="Csharp back-end mainly language, i'm currently learning it at school with it's framework ASP.NET, not my favorite :(" />
         </div>
     </section>
