@@ -25,7 +25,7 @@ export default {
 <style lang="scss">
 
 .card {
-    height: 120px;
+    height: 150px;
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 12px;
@@ -34,7 +34,7 @@ export default {
     overflow: hidden;
     color: #fff;
     background-position: 95% 50%;
-    background-size: 25%;
+    background-size: 70px;
     background-repeat: no-repeat;
     background-color: $black;
     transition: color .8s cubic-bezier(.16,1,.3,1);
