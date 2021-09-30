@@ -29,13 +29,10 @@ export default {
 
 .whoiam {
     position: relative;
-    margin-top: 110px;
-    margin-bottom: 110px;
+    margin: 110px auto 60px; 
     list-style: none;
     max-width: 1040px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
     @media (max-width: 1130px) {
         max-width: 90%;
         position: static;
