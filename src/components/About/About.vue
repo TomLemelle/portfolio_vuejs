@@ -1,8 +1,9 @@
 <template>
-  <Header />
+  <Header color="#111111" topText="Web" bottomText="Development" />
   <Title title="About me"/>
   <Whoiam />
   <DashedLine />
+  <Header color="#111111" topText="Web" bottomText="Development" />
   <Skills />
 
 </template>

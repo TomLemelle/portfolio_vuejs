@@ -8,8 +8,8 @@
 
         <div class="top-right">
             <div class="text">
-                <p :style="{ color: itemColor }">{{topText}}</p>
-                <p :style="{ color: itemColor }">{{bottomText}}</p>
+                <p :style="{ color: color }">{{topText}}</p>
+                <p :style="{ color: color }">{{bottomText}}</p>
             </div>
             <div class="line" :style="{ backgroundColor: itemColor }"></div>
         </div>
@@ -45,14 +45,32 @@ export default {
     align-items: center;
     padding: 88px 100px 100px 100px;
 
+    @media (max-width: 600px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .top-left {
+        min-width: 104px;
+        min-height: 24px;
+    }
+
     .top-right {
         display: flex;
         align-items: center;
         color: $white;
         text-align: right;
 
+        @media (max-width: 600px) {
+            text-align: center;
+            margin: 0 auto;
+        }
+        
         .text {
             margin-right: 20px;
+            @media (max-width: 600px) {
+                margin-right: 0;
+            }
         }
 
         .line {

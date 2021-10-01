@@ -13,7 +13,12 @@
             <SkillCard :style="symfonybg" name="Symfony" desc="PHP back-end & front-end framework that i use sometimes for creating apis or back-end servers, it's pretty cool :|" />
             <SkillCard :style="csharpbg" name="Csharp" desc="Csharp back-end mainly language, i'm currently learning it at school with it's framework ASP.NET, not my favorite :(" />
         </div>
+
     </section>
+
+    
+
+
 </template>
 
 <script>
@@ -58,6 +63,20 @@ export default {
 <style lang="scss">
 .skills {
     margin-bottom: 120px;
+
+    h3 {
+        margin-left: 4%;
+        padding: 15px;
+        display: inline-flex;
+        border: 1px solid #111111;
+        
+        text-transform: uppercase;
+        font-family: 'Didot';
+        font-size: 50px;
+        font-weight: 400;
+        margin-bottom: 75px;
+    }
+
     h4 {
         font-size: 28px;
         font-weight: bold;
@@ -71,14 +90,6 @@ export default {
         }
 
         span { color: $black; }
-    }
-    h3 {
-        margin-left: 4%;
-        text-transform: uppercase;
-        font-family: 'Didot';
-        font-size: 50px;
-        font-weight: 400;
-        margin-bottom: 75px;
     }
 
     .cards {
@@ -97,6 +108,5 @@ export default {
     }
 
 }
-
             
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section class="heroBanner">
-      <Header color="#fff" topText="Web" bottomText="Development"/>
+      <Header color="#ffffff" topText="Web" bottomText="Development" ref="headeMobile" />
       <div class="center">
           <h1>Tom Lemelle</h1>
           <div class="drag"></div>
@@ -18,7 +18,8 @@ export default {
     components: {
         Header,
         Footer,
-    }
+    },
+    
 }
 </script>
 

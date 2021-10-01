@@ -31,7 +31,7 @@ export default {
     position: relative;
     margin: 110px auto 60px; 
     list-style: none;
-    max-width: 1040px;
+    max-width: 1065px;
     height: auto;
     @media (max-width: 1130px) {
         max-width: 90%;
@@ -41,21 +41,22 @@ export default {
     .text {
         position: absolute;
         z-index: 1000;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         top: 0;
         left: 0;
         @media (max-width: 1130px) {
             position: static;
             text-align: center;
         }
+
         h3 {
+            display: inline-flex;
+            border: 1px solid #111111;
+            padding: 15px;
+            margin-bottom: 45px;
             text-transform: uppercase;
             font-family: 'Didot';
             font-size: 50px;
             font-weight: 400;
-            margin-bottom: 45px;
         }
 
         p {
