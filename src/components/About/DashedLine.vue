@@ -14,8 +14,4 @@ export default {
 
 <style>
 
-.dashed-line {
-    margin-bottom: 120px;
-}
-
 </style>
