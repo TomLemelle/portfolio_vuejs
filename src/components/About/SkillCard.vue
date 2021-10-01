@@ -39,25 +39,30 @@ export default {
     background-color: $black;
     transition: color .8s cubic-bezier(.16,1,.3,1);
 
+     @media (max-width: 306px) {
+        height: auto;
+    }
+
     .skill-name {
-        font-size: 1.25vw;
+        font-size: 18px;
         position: relative;
         z-index: 1;
         line-height: 1em;
     }
 
     .skill-description {
-        font-size: .7vw;
-        font-weight: normal;
+        font-size: .9vw;
+        font-family: 'Roboto Mono';
+        font-weight: bold;
         margin-top: 12px;
         max-width: 70%;
         position: relative;
         z-index: 1;
-        @media (max-width: 1114px) {
-            font-size: .9vw;
+        @media (max-width: 1285px) {
+            font-size: 1.2vw;
         }
         @media (max-width: 900px) {
-            font-size: 10px;
+            font-size: 15px;
         }
     }
 }

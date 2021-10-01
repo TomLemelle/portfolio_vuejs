@@ -3,7 +3,7 @@
 </template>
 
 <style lang="scss">
-
+@import url("scss/_fonts.scss");
 * {
   margin: 0;
   padding: 0;

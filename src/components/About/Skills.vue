@@ -57,6 +57,7 @@ export default {
 
 <style lang="scss">
 .skills {
+    margin-bottom: 120px;
     h4 {
         font-size: 28px;
         font-weight: bold;
